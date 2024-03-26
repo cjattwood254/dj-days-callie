@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Days</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- now playing (cover art, title, artist) -->
+        <section>
+            <article>
+                <h2>Now Playing</h2>
+                <img src="">
+                <p>Artist: Song Title</p>
+            </article>
+        </section>
+        <!-- all albums in collection (play next) -->
+        <div></div>
+        <!-- add new album (input title, artist, genre, cover art URL) -->
+        <section>
+            <form>
+                <label for="song-title-input">Song Title</label>
+                    <input type="text" id="song-title-input">
+                <label for="artist-name-input">Artist Name</label>
+                    <input type="text" id="artist-name-input">
+                <select id="genre-select">
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                </select>
+            <label for="album-art-url">Album Art URL</label>
+                <input type="url" id="album-art-url">
+            <button id="add-album-button">Add Album</button>
+            </form>
+        </section>
+        <!-- can start the set if you have 10+ albums -->
+    </main>
+    <footer></footer>
+</body>
+</html>
