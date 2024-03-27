@@ -1,0 +1,52 @@
+/* basic page layout */
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+p, label {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex-inline;
+}
+
+article {
+    flex: 1;
+}
+
+/* let the styling begin! */
+
+article, .input {
+    text-align: center;
+    margin: 1% 1% 5% 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    transition: transform .6s;
+}
+
+/* article:hover {
+    box-shadow: 1px 5px 15px rgb(196, 165, 127);
+    transform: scale(1.05);
+} */
