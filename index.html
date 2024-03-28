@@ -16,13 +16,13 @@
         <main>
         <!-- now playing (cover art, title, artist) -->
             <section>
-                <article>
+                <article class="now-playing">
                     <h2>Now Playing</h2>
-                    <img src="">
-                    <p>Artist: Song Title</p>
+                    <img src="assets/0.jpg">
+                    <p>Artist: Album Title</p>
                 </article>
             </section>
-        <!-- all albums in collection (play next) -->
+        <!-- display all albums in collection (play next) -->
             <section>
                 <div>
                     <h2>Your Collection</h2>
@@ -33,15 +33,15 @@
                 <h2>Add an Album</h2>
                 <form>
                     <div class="input">
-                        <label for="song-title-input">Song Title</label>
+                        <label for="song-title-input">Album Title: </label>
                             <input type="text" id="song-title-input">
                     </div>
                     <div class="input">
-                        <label for="artist-name-input">Artist Name</label>
+                        <label for="artist-name-input">Artist Name: </label>
                             <input type="text" id="artist-name-input">
                     </div>
                     <div class="input">
-                        <label for="genre-select">Genre</label>
+                        <label for="genre-select">Genre: </label>
                             <select id="genre-select">
                                 <option value="Pop">Pop</option>
                                 <option value="Rock">Rock</option>
@@ -50,7 +50,7 @@
                             </select>
                     </div>
                 <div class="input">    
-                    <label for="album-art-url">Album Art URL</label>
+                    <label for="album-art-url">Album Art URL: </label>
                         <input type="url" id="album-art-url">
                     <button id="add-album-button">Add Album</button>
                 </div>

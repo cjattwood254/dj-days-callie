@@ -43,10 +43,47 @@ article, .input {
     margin: 1% 1% 5% 1%;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+img {
     transition: transform .6s;
 }
 
-/* article:hover {
-    box-shadow: 1px 5px 15px rgb(196, 165, 127);
+.now-playing > img {
+    height: 15rem;
+    width: auto;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+input, select {
+    background-color: black;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    width: 75%;
+    align-content: center;
+
+}
+
+img:hover {
     transform: scale(1.05);
-} */
+}
+
+input:hover, select:hover, button:hover {
+box-shadow: 1px 5px 15px #ffffff40;
+}
+
+section {
+    background-color: papayawhip;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
