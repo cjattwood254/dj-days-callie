@@ -1,89 +1,131 @@
-/* basic page layout */
+/* element styling */
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 1rem 5% 1rem 5%;
 }
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
+.now-playing {
     color: #ffffff;
+    text-align: center;
+    margin-left: .5rem;
+    margin-right: .5rem; 
 }
 
-p, label {
-    font-size: 1.5rem;
+.display {
     color: #ffffff;
-}
-header > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-
-section {
-    display: flex-inline;
 }
 
 article {
-    flex: 1;
-}
-
-/* let the styling begin! */
-
-article, .input {
     text-align: center;
-    margin: 1% 1% 5% 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-img {
-    transition: transform .6s;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .now-playing > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 15rem;
     width: auto;
     border-style: solid;
     border-radius: 20px;
 }
 
-input, select {
-    background-color: black;
-    color: #ffffff;
-    border-color: #ffffff;
+.collection {
+    display: inline-flex;
+}
+
+.collection > div {
+    flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 33%;
+}
+
+.collection img {
+    height: 10rem;
+    width: auto;
     border-style: solid;
     border-radius: 20px;
-    width: 75%;
-    align-content: center;
+}
 
+input, select {
+    border-style: solid;
+    border-radius: 20px;
+    width: 95%;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.add-album {
+    color: #ffffff;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: #ffffff;
+    border-radius: 20px;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+    /* text styling */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+#title {
+    font-size: 1.5rem;
+    margin-bottom: 0%;
+}
+
+#artist {
+    font-size: 1rem;
+}
+
+.small-title {
+    font-size: 1rem;
+    margin-bottom: 0%;
+}
+
+.small-artist {
+    font-size: .75rem;
+}
+
+/* interactivity */
+img {
+    transition: transform .6s;
 }
 
 img:hover {
     transform: scale(1.05);
 }
 
-input:hover, select:hover, button:hover {
-box-shadow: 1px 5px 15px #ffffff40;
+input:focus, select:focus {
+    box-shadow: 1px 5px 15px #00000040;
 }
 
-section {
-    background-color: papayawhip;
-    border-radius: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 5%;
-    margin-right: 5%;
+button:hover {
+    box-shadow: 1px 5px 15px #ffffff40;
 }
