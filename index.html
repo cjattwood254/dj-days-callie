@@ -11,43 +11,46 @@
         <!-- now playing (cover art, title, artist) -->
         <article class="now-playing">
             <h1>Now Playing</h1>
-            <img src="assets/0.jpg">
-            <p id="title">Album Title</p>
-            <p id="artist">Artist</p>
+            <div class="now-playing-album">
+                <img src="assets/0.jpg">
+                <p id="title">Album Title</p>
+                <p id="artist">Artist</p>
+            </div>
+            <audio controls></audio>
         </article>
-            <!-- can start the set if you have 10+ albums -->
-            <button id="play-set">Play Set</button>
         <!-- display all albums in collection (play next) -->
         <section>
             <article class="display">
                 <h2>Your Collection</h2>
                 <div class="collection">
-                    <div>
+                    <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
-                    <div>
+                    <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
-                    <div>
+                    <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
-                    <div>
+                    <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
-                    <div>
+                    <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
                 </div>
+            <!-- can start the set if you have 10+ albums -->
+            <button id="play-set">Play Set</button>
             </article>
             <!-- add new album (input title, artist, genre, cover art URL) -->
             <article class="add-album">
@@ -59,10 +62,13 @@
                         <input type="text" id="artist-name-input">
                     <label for="genre-select">Genre</label>
                         <select id="genre-select">
+                            <option value="Select">Select</option>
                             <option value="Pop">Pop</option>
                             <option value="Rock">Rock</option>
                             <option value="Jazz">Jazz</option>
                             <option value="Hip-Hop">Hip-Hop</option>
+                            <option value="Rap">Rap</option>
+                            <option value="Classical">Classical</option>
                         </select>  
                     <label for="album-art-url">Album Art URL</label>
                         <input type="url" id="album-art-url">
