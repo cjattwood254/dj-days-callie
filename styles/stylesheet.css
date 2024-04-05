@@ -14,6 +14,22 @@ article {
     padding-bottom: 1rem;
 }
 
+button {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .top-image-div {
     display: flex;
     justify-content: center;
@@ -75,8 +91,6 @@ audio {
     #play-set {
         margin-bottom: 2rem;
         margin-top: 2rem;
-        border-color: #000000;
-        border-style: solid;
     }
 
 .collection {
@@ -99,32 +113,30 @@ audio {
         border-width: 2px;
     }
 
+.add-album > h2 {
+    margin-top: 1rem;
+    background-color: #FEBFC6;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #000000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 form {
     color: #000000;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20rem;
     z-index: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-    .add-album > h2 {
-        margin-top: 1rem;
-        background-color: #FEBFC6;
-        border-top: solid;
-        border-bottom: solid;
-        border-width: 2px;
-        border-color: #000000;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    form {
-        display: flex;
-    }
 
     form > div {
-        flex: 1;
-        flex-wrap: wrap;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 
     input, select {
@@ -138,20 +150,6 @@ form {
         font-size: x-large;
         margin-top: .75rem;
     }
-
-button {
-    display: block;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    border: #ffffff;
-    background-color: #ffffff;
-    border-radius: 20px;
-    height: 3rem;
-    width: 10rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 
 .bottom-image-div {
     display: flex;
@@ -219,11 +217,11 @@ input:focus, select:focus {
     box-shadow: 1px 5px 15px #ffffff80;
 }
 
-button:hover, audio:hover {
+audio:hover {
     box-shadow: 1px 5px 15px #ffffff80;
 }
 
-#play-set:hover {
+button:hover {
     box-shadow: 1px 5px 15px #00000080;
 }
 
