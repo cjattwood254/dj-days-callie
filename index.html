@@ -7,16 +7,25 @@
     <title>DJ Days</title>
 </head>
 <body>
+    <div class="top-image-div">
+        <img id="top-image" src="assets/Untitled_Artwork.png">
+    </div>
     <main>
         <!-- now playing (cover art, title, artist) -->
         <article class="now-playing">
-            <h1>Now Playing</h1>
+            <div class="now-playing-h1">
+                <h1>Now 
+                    <br>
+                    Playing</h1>
+                </div>
             <div class="now-playing-album">
                 <img src="assets/0.jpg">
                 <p id="title">Album Title</p>
                 <p id="artist">Artist</p>
             </div>
-            <audio controls></audio>
+            <div class="now-playing-audio">
+                <audio controls></audio>
+            </div>
         </article>
         <!-- display all albums in collection (play next) -->
         <section>
@@ -56,26 +65,37 @@
             <article class="add-album">
                 <h2>Add Album</h2>
                 <form>
-                    <label for="album-title-input">Album Title</label>
-                        <input type="text" id="album-title-input">
-                    <label for="artist-name-input">Artist Name</label>
-                        <input type="text" id="artist-name-input">
-                    <label for="genre-select">Genre</label>
-                        <select id="genre-select">
-                            <option value="Select">Select</option>
-                            <option value="Pop">Pop</option>
-                            <option value="Rock">Rock</option>
-                            <option value="Jazz">Jazz</option>
-                            <option value="Hip-Hop">Hip-Hop</option>
-                            <option value="Rap">Rap</option>
-                            <option value="Classical">Classical</option>
-                        </select>  
-                    <label for="album-art-url">Album Art URL</label>
-                        <input type="url" id="album-art-url">
+                    <div class="input-row-div">
+                        <label for="album-title-input">Album Title</label>
+                            <input type="text" id="album-title-input">
+                    </div>
+                    <div class="input-column-div">
+                        <label for="artist-name-input">Artist Name</label>
+                            <input type="text" id="artist-name-input">
+                    </div>
+                    <div class="input-row-div">
+                        <label for="genre-select">Genre</label>
+                            <select id="genre-select">
+                                <option value="Select">Select</option>
+                                <option value="Pop">Pop</option>
+                                <option value="Rock">Rock</option>
+                                <option value="Jazz">Jazz</option>
+                                <option value="Hip-Hop">Hip-Hop</option>
+                                <option value="Rap">Rap</option>
+                                <option value="Classical">Classical</option>
+                            </select>
+                    </div>
+                    <div class="input-column-div">    
+                        <label for="album-art-input">Album Art URL</label>
+                            <input type="url" id="album-art-url">
+                    </div>
                     <button id="add-album-button">Add Album</button>
                 </form>
             </article>
         </section>
+        <!-- <div class="bottom-image-div">
+            <img id="bottom-image" src="assets/bottom-record.png">
+        </div>     -->
     </main>
 </body>
 </html>
