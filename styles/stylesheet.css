@@ -139,9 +139,20 @@ form {
         margin-left: 2rem;
     }
 
+    /* .title-input-div, .genre-select-div {
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+
+    .name-input-div, .art-input-div {
+        margin-right: 2rem;
+        margin-left: 1rem;
+    } */
+
     input, select {
         border-style: solid;
         border-radius: 20px;
+        border-color: #000000;
         width: 100%;
         align-content: center;
         text-align: center;
@@ -149,6 +160,11 @@ form {
         padding: .65rem;
         font-size: x-large;
         margin-top: .75rem;
+    }
+
+    select{
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 
 .bottom-image-div {
@@ -214,17 +230,17 @@ img {
 }
 
 input:focus, select:focus {
-    box-shadow: 1px 5px 15px #ffffff80;
+    box-shadow: 1px 5px 15px #00000040;
 }
 
 audio:hover {
-    box-shadow: 1px 5px 15px #ffffff80;
+    box-shadow: 1px 5px 15px #00000040;
 }
 
 button:hover {
-    box-shadow: 1px 5px 15px #00000080;
+    box-shadow: 1px 5px 15px #00000040;
 }
 
 .now-playing > img:hover {
-    box-shadow: 1px 5px 15px #ffffff80;
+    box-shadow: 1px 5px 15px #00000040;
 }

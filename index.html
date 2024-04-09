@@ -32,7 +32,13 @@
             <article class="display">
                 <h2>Your Collection</h2>
                 <div class="collection">
-                    <div class="album-art">
+                    <div class="album-display">
+                        <img src="">
+                        <p class="album-art"></p>
+                        <p class="artist-name"></p>
+                        <p class="album-title"></p>
+                    </div>
+                    <!-- <div class="album-art">
                         <img src="assets/0.jpg">
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
@@ -57,6 +63,11 @@
                         <p class="small-title">Album Title</p>
                         <p class="small-artist">Artist</p>
                     </div>
+                    <div class="album-art">
+                        <img src="assets/0.jpg">
+                        <p class="small-title">Album Title</p>
+                        <p class="small-artist">Artist</p>
+                    </div> -->
                 </div>
             <!-- can start the set if you have 10+ albums -->
             <button id="play-set">Play Set</button>
@@ -65,15 +76,15 @@
             <article class="add-album">
                 <h2>Add Album</h2>
                 <form>
-                    <div class="input-row-div">
+                    <div class="title-input-div">
                         <label for="album-title-input">Album Title</label>
                             <input type="text" id="album-title-input">
                     </div>
-                    <div class="input-column-div">
+                    <div class="name-input-div">
                         <label for="artist-name-input">Artist Name</label>
                             <input type="text" id="artist-name-input">
                     </div>
-                    <div class="input-row-div">
+                    <div class="genre-select-div">
                         <label for="genre-select">Genre</label>
                             <select id="genre-select">
                                 <option value="Select">Select</option>
@@ -85,7 +96,7 @@
                                 <option value="Classical">Classical</option>
                             </select>
                     </div>
-                    <div class="input-column-div">    
+                    <div class="art-input-div">    
                         <label for="album-art-input">Album Art URL</label>
                             <input type="url" id="album-art-url">
                     </div>
@@ -97,5 +108,6 @@
             <img id="bottom-image" src="assets/bottom-record.png">
         </div>     -->
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
