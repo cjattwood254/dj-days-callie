@@ -21,7 +21,7 @@ button {
     margin-right: auto;
     border-color: #000000;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1.5px;
     border-radius: 20px;
     background-color: #ffffff;
     height: 3rem;
@@ -57,6 +57,10 @@ button {
         flex: 1;
     }
 
+    .now-playing-h1 {
+        margin-top: -9rem;
+    }
+
     .now-playing-album > img {
         display: block;
         margin-left: auto;
@@ -69,6 +73,8 @@ button {
 
 audio {
     border-radius: 50px;
+    /* can't figure out how to move this up */
+    margin-top: -10rem; 
 }
 
 .display {
@@ -125,6 +131,7 @@ audio {
 }
 
 form {
+    /* position: absolute; */
     color: #000000;
     width: 100%;
     margin-left: auto;
