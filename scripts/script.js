@@ -45,8 +45,6 @@ function displayAlbums(albums){
 
 fetchAlbums();
 
-// if AlbumDisplay.length <10, display "oops, you don't have enough albums to start this set!"
-// ideally calculate number of albums left to get to 10
 
 var n = 9 - AlbumCollection.length
 
@@ -57,5 +55,41 @@ function checkSetLength(collectionArray){
 }
 
 document.getElementById('play-set').onclick = () => {
-    // display error message or play set
+    checkSetLength(collectionArray);
 };
+
+var albumList = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const displayArrayAsList = (array, elementID) =>{
+        const listElement = document.getElementById(elementID);
+        listElement.innerHTML = '';
+        array.forEach(item =>{
+            const listItem = document.createElement('div');
+            listItem.textContent = item.displayInfo ? item.displayInfo() : item;
+            listElement.appendChild(listItem);
+        })
+    }
+
+    document.getElementById('add-album').innerHTML = fetchAlbums();
+    document.getElementById('add-album-button').onclick = () => {
+        const title = document.getElementById("album-title-input").value;
+        const artist = document.getElementById("artist-name-input").value;
+        const genre = document.getElementById("genre-select").value;
+        const art = document.getElementById("album-art-input").value;
+        const album = new albumList(title, artist, genre, art);
+        albumList.push(album);
+
+        displayArrayAsList(albumList, 'display');
+    }
+
+    document.getElementById('add-album-button').onclick = () => {
+        const title = document.getElementById('album-title-input').value;
+        const artist = document.getElementById("artist-name-input").value;
+        const genre = document.getElementById("genre-select").value;
+        const art = document.getElementById("album-art-input").value;
+        const album = new FurnitureItems(title, artist, genre, art);
+        albumList.push(album);
+        displayArrayAsList(albumList, 'display');
+    }
+})
